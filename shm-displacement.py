@@ -20,5 +20,5 @@ time_values = [t*0.05 for t in range(1001)]
 
 for t in time_values:
     displacement = int(shm(amplitude, frequency, phase, t))
-    print(f'Time: {t:.3f}s {" " * (10 + displacement)}*') # The 10 is added to offset pattern for graph to fit in, instead of crashing down and not having space to move even below
+    print(f'Time: {t:.3f}s {" " * (10 + displacement)}|') # The 10 is added to offset pattern for graph to fit in, instead of crashing down and not having space to move even below
     time.sleep(0.05)
